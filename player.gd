@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
-const SPEED = 250.0
+const SPEED: float = 250.0
 
-func _physics_process(delta: float) -> void:
-	var direction = Input.get_vector(
+func _physics_process(_delta: float) -> void:
+	var direction: Vector2 = Input.get_vector(
 		"move_left",
 		"move_right",
 		"move_up",

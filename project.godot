@@ -10,11 +10,17 @@ config_version=5
 
 [application]
 
-config/name="lets go"
-config/features=PackedStringArray("4.7", "Forward Plus")
+config/name="江湖初行"
+run/main_scene="res://scenes/journey.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=800
+window/size/window_width_override=1280
+window/size/window_height_override=800
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
@@ -48,4 +54,10 @@ move_down={
 
 [rendering]
 
-rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.06, 0.1, 0.1, 1)
+
+[gui]
+
+theme/custom="res://ui/jianghu_theme.tres"

@@ -1,0 +1,19 @@
+{
+  "scene_path": "res://scenes/journey.tscn",
+  "viewport_size": {
+    "width": 960,
+    "height": 540
+  },
+  "settle_frames": 8,
+  "steps": [
+    {
+      "type": "ui_report",
+      "label": "world_960",
+      "node_path": "Layout",
+      "path": "res://artifacts/layout-960.json",
+      "fail_on": [
+        "any"
+      ]
+    }
+  ]
+}
